@@ -13,7 +13,11 @@
                         title: 'Demo app button',
                         svgIcon: icon24,
                         onClick: () => {
-                            alert('Hello World how are you')
+                            let allStickers = await miro.board.widgets.get({
+                                type: 'sticker'
+                            })
+                            console.log(allStickers)
+                            alert('stickers')
                         }
                     },
                 }
