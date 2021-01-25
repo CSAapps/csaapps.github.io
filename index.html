@@ -1,25 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
-    <script>
-        miro.onReady(() => {
-            const icon24 = '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>';
+    <title>CSA Apps</title>
 
-            miro.initialize({
-                extensionPoints: {
-                    bottomBar: {
-                        title: 'Demo app button',
-                        svgIcon: icon24,
-                        onClick: () => {
-                            alert('stickers')
-                        }
-                    },
-                }
-            })
-        })
-    </script>
+    <meta name='viewport' content='width=device-width'>
+
+    <style>
+         :root {
+            --font-color: #ffffff;
+            --bg-color: #262626;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+        }
+        
+        #bg-div {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #main-div {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--font-color);
+            font-size: 60px;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+
 </head>
+
+<body>
+
+
+
+    <div id="bg-div">
+        <div id="main-div">
+            <span>CSA Apps</span>
+        </div>
+    </div>
+
+
+
+
+</body>
 
 </html>
